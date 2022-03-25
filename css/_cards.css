@@ -1,0 +1,88 @@
+.container_cards {
+    position: relative;
+    z-index: 1000;
+    top: 54px;
+    left: 99px;
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 438px 438px 438px 438px;
+}
+
+.content_card {
+    position: relative;
+    width: 408px;
+    height: 352px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    border-radius: 25px;
+    margin-bottom: 32px;
+    margin-right: 10px;
+}
+
+.container_video {
+    position: relative;
+    width: 408px;
+    height: 230px;
+    left: 0px;
+    top: 0px;
+    border-radius: 25px;
+}
+
+.card {
+    position: relative;
+    border-radius: 25px;
+    border: 0;
+}
+
+.thevideo {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.content_video_deteils {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.content_user_name {
+    margin-top: 5px;
+}
+
+.user_name_span {
+    margin-left: 5px;
+    margin-top: 5px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #808080;
+}
+
+.content_data_deteils {
+    margin-top: 4px;
+}
+
+.content_seeing_deteils {
+    position: relative;
+    text-align: end;
+    margin-top: -24px;
+    color: #0B70F2;
+}
+
+.content_card:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.container_deteils:hover {
+    padding-left: 18px;
+    padding-right: 18px;
+    transition: ease 0.5s;
+}

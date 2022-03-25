@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css\bootstrap.css">
+    <link rel="stylesheet" href="css\bootstrap.css.map">
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\main.css">
+    <link rel="stylesheet" href="css\_header.css">
+    <link rel="stylesheet" href="css\collapse.css">
+    <link rel="stylesheet" href="css\owl.carousel.min.css">
+    <link rel="stylesheet" href="css\owl.theme.default.min.css">
+    <link rel="stylesheet" href="css\modal.css">
+    <link rel="stylesheet" href="css\modal_reg.css">
+    <link rel="stylesheet" href="css\_cards.css">
+    <title>Oncloud</title>
+    <link rel="icon" href="image\Frame_logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>VideoHosting</title>
+</head>
+
+<body>
+    <div class="container_content">
+        <div class="container_nav">
+            <nav class="navbar">
+                <div class="control_navbar">
+                    <div class="container_nav_main">
+                        <!--Logotip-->
+                        <a class="frame_image" href="#">
+                            <img src="image\Frame_logo.png" alt="">
+                        </a>
+                        <!-- home -->
+                        <a href="#home" class="oncloud">
+                            <img src="image\OnCloud.png" alt="">
+                        </a>
+                        <span class="category_all" data-bs-toggle="collapse" data-bs-target="#collapseOne"><a class="nav-link dropdown-toggle" id="category" data-bs-toggle="dropdown" href="#collapseOne" aria-haspopup="true" aria-expanded="false">Category</a></span>
+                        <ul class="dropdown-menu text-left" aria-labelledby="category" id="dropdown_menu">
+                            <li><a class="dropdown-item" id="dropdown_item" href="#movies">MOVIES</a></li>
+                            <li><a class="dropdown-item" id="dropdown_item" href="#music">MUSIC</a></li>
+                            <li><a class="dropdown-item" id="dropdown_item" href="#sport">SPORT</a></li>
+                            <li><a class="dropdown-item" id="dropdown_item" href="#game">GAME</a></li>
+                            <li><a class="dropdown-item" id="dropdown_item" href="#education">EDUCATION</a></li>
+                        </ul>
+                    </div>
+                    <div class="search_form_nav">
+                        <!-- search -->
+                        <form class="input-group input-group" id="search_form">
+                            <input class="form-control border-primary rounded-pill me-2" id="search_input" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-primary rounded-pill" id="button_search" type="submit">
+                                <i class="bi bi-search"></i>
+                                </button>
+                        </form>
+                    </div>
+                    <div class="container_nav_buttons">
+                        <!--Button of creating video from user-->
+                        <button class="btn btn-outline-primary text-center rounded-pill me-3" id="button_create" data-bs-toggle="modal" data-bs-target="#staticBackdrop3" type="submit">
+                            <i class="bi bi-camera-video"><i class="bi bi-plus"></i></i>
+                        </button>
+                        <div id="staticBackdrop3" class="modal modal-child" data-backdrop-limit="1" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <!-- Modal content-->
+                                <div class="modal-content modal_content_create bg-white">
+                                    <div class="modal-header border-0 modal_header_create">
+                                        <button type="button" class="btn btn-sm rounded-pill text-primary" data-bs-dismiss="modal" aria-label="Close">
+                                            <img src="image\bi_x-circle.png" class="create_video_close_modal" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="modal-body mt-2 mb-3 text-center">
+                                        <h4 class="modal-title ml_3">Загрузка видео</h4>
+                                        <div class="text-center">
+                                            <img src="image\Group 55.png" class="create_video_image_modal" alt="">
+                                        </div>
+                                        <div class="create_video_modal_content_1">
+                                            Перетащите файлы сюда или нажмите кнопку ниже, чтобы выбрать их на устройстве
+                                        </div>
+                                        <div class="create_video_modal_content_2">
+                                            Пока вы не опубликуете видео, доступ к ним будет ограничен
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="button" class="btn create_video_modal_submit">Выбрать файлы</button>
+                                        </div>
+                                        <div class="create_video_modal_content_3">
+                                            Добавляя видео, вы принимаете <a href="#" class="text-primary">Условия использования</a> и <a href="#" class="text-primary">правила сообщества организации</a><br> Также вы обязуетесь соблюдать авторские права
+                                            и конфиденциальность данных других пользователей. <a href="#" class="text-primary">Подробнее...</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--Button of notification of user-->
+                        <button type="button" class="btn btn-outline-primary text-center rounded-pill me-3" id="button_notification">
+                            <i class="bi bi-bell position-relative"></i>
+                            <span class="bells position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="notification_num">61</span>
+                        </button>
+                        <!--Button of registration/log in-->
+                        <button type="button" class="btn btn-outline-primary rounded-pill me-3" id="button_regis" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <i class="bi bi-person"></i>
+                            <!--<img>-->
+                        </button>
+                        <!--modal of autorization and regitration-->
+                        <div class="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="0" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content modal_registration_content">
+                                    <div class="modal-header modal_header_content border-0">
+                                        <button type="button" class="btn btn-sm rounded-pill text-primary" data-bs-dismiss="modal" aria-label="Close">
+                                            <img src="image\bi_x-circle.png" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="modal-body modal_autorization_body">
+                                        <h4 class="modal-title modal_autorization_title">Authorization</h4>
+                                        <div class="container">
+                                            <form class="form_autorization_label">
+                                                <label class="label_autorization" for="name">
+                                                    <input type="text" class="autorization_name" id="name" placeholder="Login, e-mail or phone number">
+                                                    <span class="span_autorization_label">Login, e-mail or phone number</span>
+                                                </label>
+                                            </form>
+                                            <form class="form_autorization_label">
+                                                <label class="label_autorization" for="name">
+                                                    <input type="text" class="autorization_name" id="name" placeholder="Password">
+                                                    <span class="span_autorization_label">Password</span>
+                                                </label>
+                                            </form>
+                                            <a href="#" class="forget_password_autorization">Forget the password?</a>
+                                            <button class="btn text-center autorization_button_submit">Login</button><br>
+                                            <button class="autorization_with_google btn">
+                                                <img src="image\flat-color-icons_google.png" alt="">
+                                                <span class="span_autorization_google">Login with Google</span>
+                                            </button>
+                                            <button class="autorization_with_facebook btn">
+                                                <img src="image\akar-icons_facebook-fill.png" alt="">
+                                                <span class="span_autorization_facebook">Facebook</span>
+                                            </button>
+                                            <br>
+
+                                            <a href="#staticBackdrop2" role="button" class="link_to_registration" data-target="#staticBackdrop2" data-toggle="modal">Registration</a>
+                                            <div id="staticBackdrop2" class="modal modal-child" data-backdrop-limit="1" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-modal-parent="#staticBackdrop">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <!-- Modal content-->
+                                                    <div class="modal-content content_modal_registration">
+                                                        <div class="modal-header border-0">
+                                                            <button class="btn_registration_close-1" data-dismiss="modal" id="greft">
+                                                                <img src="image\Frame 20.png" alt="">
+                                                            </button>
+                                                            <span class="modal_title_reg">Registration</span>
+                                                            <button type="button" class="btn_registration_close-2" data-dismiss="modal">
+                                                                <img src="image\bi_x-circle.png" alt="">
+                                                            </button>
+
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="registration_modal_main">
+                                                                <div class="registration_modal-1">
+                                                                    <form class="form_registration_label">
+                                                                        <label class="label_registration" for="name">
+                                                                            <input type="text" class="registration_name" id="name" placeholder="Name, Surname">
+                                                                            <span class="span_registration_label">Name, Surname</span>
+                                                                        </label>
+                                                                    </form>
+                                                                    <form class="form_registration_label">
+                                                                        <label class="label_registration" for="name">
+                                                                            <input type="text" class="registration_name" id="name" placeholder="Username">
+                                                                            <span class="span_registration_label">Username</span>
+                                                                        </label>
+                                                                    </form>
+                                                                    <form class="form_registration_label">
+                                                                        <label class="label_registration" for="name">
+                                                                            <input type="text" class="registration_name" id="name" placeholder="Phone number">
+                                                                            <span class="span_registration_label">Phone number</span>
+                                                                        </label>
+                                                                    </form>
+                                                                    <form class="form_registration_label">
+                                                                        <label class="label_registration" for="name">
+                                                                            <input type="text" class="registration_name" id="name" placeholder="E-mail">
+                                                                            <span class="span_registration_label">E-mail</span>
+                                                                        </label>
+                                                                    </form>
+                                                                </div>
+                                                                <div class="registration_modal-2">
+                                                                    <div class="img_registration">
+                                                                        <img class="img_registration_image" src="image\ic_round-add-a-photo.png" alt="">
+                                                                    </div>
+                                                                    <a href="#"><span class="span_registration_img">Add photo from PC</span></a>
+                                                                    <div class="passord_conteiner">
+                                                                        <form class="form_registration_label">
+                                                                            <label class="label_registration" for="name">
+                                                                                <input type="text" class="registration_name" id="name" placeholder="Password">
+                                                                                <span class="span_registration_label">Password</span>
+                                                                            </label>
+                                                                        </form>
+                                                                        <form class="form_registration_label">
+                                                                            <label class="label_registration" for="name">
+                                                                                <input type="text" class="registration_name" id="name" placeholder="Repeat the password">
+                                                                                <span class="span_registration_label">Repeat the password</span>
+                                                                            </label>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+                                                                <button class="btn registratin_button">Sign Up</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+
+
+
+                                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                                            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_icon">
+                    <span></span>
+                </div>
+
+            </nav>
+            <!--Category buttons-->
+            <div id="collapseOne" class="collapse">
+                <div class="container_category_img tab-content">
+                    <div id="demo1" class="collapse">
+                        <img src="image\i81m65q5jwm71 (1) 1.png" alt="">
+                    </div>
+                    <div id="demo2" class="collapse">
+                        <img src="image\SL-123119-26540-31 1.png" alt="">
+                    </div>
+                    <div id="demo3" class="collapse">
+                        <img src="image\32611 1.png" alt="">
+                    </div>
+                    <div id="demo4" class="collapse">
+                        <img src="image\gamepad_in_hand_video_games_gamer_game_contest_2021_08_30_13_06 1.png" alt="">
+                    </div>
+                    <div id="demo5" class="collapse">
+                        <img src="image\pexels-pixabay-301920 1.png" alt="">
+                    </div>
+                </div>
+                <div class="container_category" id="collapse_exp">
+                    <button type="button" data-bs-toggle="collapse" data-bs-target="#demo1" data-parent="#collapseOne" class="btn btn_category" id="movies"><img id="movies_img" src="image\Frame 51.png" alt=""></button>
+                    <button type="button" data-bs-toggle="collapse" data-bs-target="#demo2" data-parent="#collapseOne" class="btn btn_category" id="music"><img id="music_img" src="image\Frame 52.png" alt=""></button>
+                    <button type="button" data-bs-toggle="collapse" data-bs-target="#demo3" data-parent="#collapseOne" class="btn btn_category" id="sport"><img id="sport_img" src="image\Frame 53.png" alt=""></button>
+                    <button type="button" data-bs-toggle="collapse" data-bs-target="#demo4" data-parent="#collapseOne" class="btn btn_category" id="game"><img id="game_img" src="image\Frame 54.png" alt=""></button>
+                    <button type="button" data-bs-toggle="collapse" data-bs-target="#demo5" data-parent="#collapseOne" class="btn btn_category" id="education"><img id="education_img" src="image\Frame 55.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+
+        <button class="all_tag_button">All</button>
+        <div class="container_slider">
+            <div class="owl-carousel">
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+                <div class="box"><button class="owl_carusel_item">Primary</button></div>
+            </div>
+        </div>
+
+
+
+        <div class="container_cards">
+            <div class="content_card">
+                <div class="card">
+                    <div class="container_video">
+                        <a href="_video_deteils.html" target="_self">
+                            <video class="thevideo" muted>
+                                <source src="image\alb_glob0401_1080p_24fps.mp4">
+                            </video>
+                        </a>
+                    </div>
+                    <div class="container_deteils">
+                        <div class="content_video_deteils">
+                            Подробный видео курс по Bootstrap 5. Глава 1, часть 3
+                        </div>
+                        <div class="content_user_name">
+                            <img class="user_image" src="image\Ellipse 3.png" alt="">
+                            <span class="user_name_span">Murphy_2001</span>
+                        </div>
+                        <div class="content_data_deteils">
+                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <div class="content_seeing_deteils">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                </svg>
+                                <a class="nums">102</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content_card">
+                <div class="card">
+                    <div class="container_video">
+                        <a href="_video_deteils.html" target="_self">
+                            <video class="thevideo" muted>
+                                <source src="image\alb_glob0401_1080p_24fps.mp4" type="video/mp4">
+                            </video>
+                        </a>
+                    </div>
+                    <div class="container_deteils">
+                        <div class="content_video_deteils">
+                            Подробный видео курс по Bootstrap 5. Глава 1, часть 3
+                        </div>
+                        <div class="content_user_name">
+                            <img class="user_image" src="image\Ellipse 3.png" alt="">
+                            <span class="user_name_span">Murphy_2001</span>
+                        </div>
+                        <div class="content_data_deteils">
+                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <div class="content_seeing_deteils">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                </svg>
+                                <a class="nums">102</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content_card">
+                <div class="card">
+                    <div class="container_video">
+                        <a href="_video_deteils.html" target="_self">
+                            <video class="thevideo" muted>
+                                <source src="image\alb_glob0401_1080p_24fps.mp4">
+                            </video>
+                        </a>
+                    </div>
+                    <div class="container_deteils">
+                        <div class="content_video_deteils">
+                            Подробный видео курс по Bootstrap 5. Глава 1, часть 3
+                        </div>
+                        <div class="content_user_name">
+                            <img class="user_image" src="image\Ellipse 3.png" alt="">
+                            <span class="user_name_span">Murphy_2001</span>
+                        </div>
+                        <div class="content_data_deteils">
+                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <div class="content_seeing_deteils">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                </svg>
+                                <a class="nums">102</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content_card">
+                <div class="card">
+                    <div class="container_video">
+                        <a href="_video_deteils.html" target="_self">
+                            <video class="thevideo" muted>
+                                <source src="image\alb_glob0401_1080p_24fps.mp4">
+                            </video>
+                        </a>
+                    </div>
+                    <div class="container_deteils">
+                        <div class="content_video_deteils">
+                            Подробный видео курс по Bootstrap 5. Глава 1, часть 3
+                        </div>
+                        <div class="content_user_name">
+                            <img class="user_image" src="image\Ellipse 3.png" alt="">
+                            <span class="user_name_span">Murphy_2001</span>
+                        </div>
+                        <div class="content_data_deteils">
+                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <div class="content_seeing_deteils">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                </svg>
+                                <a class="nums">102</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content_card">
+                <div class="card">
+                    <div class="container_video">
+                        <a href="_video_deteils.html" target="_self">
+                            <video class="thevideo" muted>  
+                                <source src="image\alb_glob0401_1080p_24fps.mp4">
+                            </video>
+                        </a>
+                    </div>
+                    <div class="container_deteils">
+                        <div class="content_video_deteils">
+                            Подробный видео курс по Bootstrap 5. Глава 1, часть 3
+                        </div>
+                        <div class="content_user_name">
+                            <img class="user_image" src="image\Ellipse 3.png" alt="">
+                            <span class="user_name_span">Murphy_2001</span>
+                        </div>
+                        <div class="content_data_deteils">
+                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <div class="content_seeing_deteils">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                </svg>
+                                <a class="nums">102</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content_card">
+                <div class="card">
+                    <div class="container_video">
+                        <a href="_video_deteils.html" target="_self">
+                            <video class="thevideo" muted>  
+                                <source src="image\alb_glob0401_1080p_24fps.mp4">
+                            </video>
+                        </a>
+                    </div>
+                    <div class="container_deteils">
+                        <div class="content_video_deteils">
+                            Подробный видео курс по Bootstrap 5. Глава 1, часть 3
+                        </div>
+                        <div class="content_user_name">
+                            <img class="user_image" src="image\Ellipse 3.png" alt="">
+                            <span class="user_name_span">Murphy_2001</span>
+                        </div>
+                        <div class="content_data_deteils">
+                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <div class="content_seeing_deteils">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                </svg>
+                                <a class="nums">102</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content_card">
+                <div class="card">
+                    <div class="container_video">
+                        <a href="_video_deteils.html" target="_self">
+                            <video class="thevideo" muted>  
+                                <source src="image\alb_glob0401_1080p_24fps.mp4">
+                            </video>
+                        </a>
+                    </div>
+                    <div class="container_deteils">
+                        <div class="content_video_deteils">
+                            Подробный видео курс по Bootstrap 5. Глава 1, часть 3
+                        </div>
+                        <div class="content_user_name">
+                            <img class="user_image" src="image\Ellipse 3.png" alt="">
+                            <span class="user_name_span">Murphy_2001</span>
+                        </div>
+                        <div class="content_data_deteils">
+                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <div class="content_seeing_deteils">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                </svg>
+                                <a class="nums">102</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content_card">
+                <div class="card">
+                    <div class="container_video">
+                        <a href="_video_deteils.html" target="_self">
+                            <video class="thevideo" muted>  
+                                <source src="image\alb_glob0401_1080p_24fps.mp4">
+                            </video>
+                        </a>
+                    </div>
+                    <div class="container_deteils">
+                        <div class="content_video_deteils">
+                            Подробный видео курс по Bootstrap 5. Глава 1, часть 3
+                        </div>
+                        <div class="content_user_name">
+                            <img class="user_image" src="image\Ellipse 3.png" alt="">
+                            <span class="user_name_span">Murphy_2001</span>
+                        </div>
+                        <div class="content_data_deteils">
+                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <div class="content_seeing_deteils">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                </svg>
+                                <a class="nums">102</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content_card">
+                <div class="card">
+                    <div class="container_video">
+                        <a href="_video_deteils.html" target="_self">
+                            <video class="thevideo" muted>  
+                                <source src="image\alb_glob0401_1080p_24fps.mp4">
+                            </video>
+                        </a>
+                    </div>
+                    <div class="container_deteils">
+                        <div class="content_video_deteils">
+                            Подробный видео курс по Bootstrap 5. Глава 1, часть 3
+                        </div>
+                        <div class="content_user_name">
+                            <img class="user_image" src="image\Ellipse 3.png" alt="">
+                            <span class="user_name_span">Murphy_2001</span>
+                        </div>
+                        <div class="content_data_deteils">
+                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <div class="content_seeing_deteils">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                </svg>
+                                <a class="nums">102</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="js\dop.js"></script>
+            <script src="js\media.js"></script>
+            <script type="text/javascript" src="js\slicks.js"></script>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js\jquery-3.6.0.min.js"></script>
+    <script src="js\jquery.min1.js"></script>
+    <script src="js\owl_carusel.js"></script>
+    <script src="js\owl.carousel.min.js"></script>
+    <script src="js\media.js"></script>
+    <script src="js\dop.js"></script>
+    <script type="text/javascript" src="js\slick.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>

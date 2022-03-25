@@ -1,0 +1,580 @@
+.container_profile {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 111px;
+    left: 60px;
+    display: grid;
+    grid-template-columns: 408px 1282px;
+}
+
+.conteiner_user_deteils {
+    position: relative;
+    width: 408px;
+    height: 749px;
+    left: 40px;
+    top: 49px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.content_card_front {
+    position: relative;
+    background-color: #FFFFFF;
+    width: 406px;
+    height: 747px;
+    left: 0;
+    top: 0;
+    border-radius: 25px;
+}
+
+.content_card_back {
+    position: relative;
+    width: 406px;
+    height: 747px;
+    left: 0;
+    top: 0;
+    border-radius: 25px;
+    background-color: #FFFFFF;
+}
+
+.hidden {
+    display: none;
+}
+
+.button_close_edit {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: 28px;
+    left: 23px;
+    border: 0;
+    border-radius: 22px;
+    background-color: #FFFFFF;
+}
+
+.image_edit_deteils {
+    position: relative;
+    width: 98px;
+    height: 98px;
+    top: 10px;
+    left: 155px;
+    border-radius: 49px;
+    background: #EAEAEA;
+    padding-left: 25px;
+    padding-top: 27px;
+}
+
+.link_edit_deteils {
+    position: relative;
+    top: 18px;
+    left: 112px;
+    width: 181px;
+    height: 22px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #0B70F2;
+}
+
+.form_edit_label {
+    position: relative;
+    margin-bottom: 30px;
+    top: 48px;
+    left: 72px;
+}
+
+.label_edit {
+    position: relative;
+}
+
+.edit_name {
+    position: relative;
+    width: 262px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #0B70F2;
+    box-sizing: border-box;
+    border-radius: 25px;
+    outline: none;
+    padding-left: 20px;
+}
+
+.span_edit_label {
+    position: absolute;
+    top: -8px;
+    left: 30px;
+    transform: translateY(22px);
+    transition-duration: 300ms;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.label_edit:focus-within>.span_edit_label,
+.edit_name:not(:placeholder-shown)+.span_edit_label {
+    transform: translateY(0px);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: #FFFFFF;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.edit_name::placeholder {
+    opacity: 0;
+}
+
+.button_save_edit {
+    position: relative;
+    width: 104px;
+    height: 50px;
+    left: 151px;
+    top: 64px;
+    background: #0B70F2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    border: 0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.span_personal_information {
+    position: relative;
+    width: 277px;
+    height: 30px;
+    left: 66px;
+    top: 50px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.image_personal_information {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    left: 122px;
+    top: 89px;
+    border-radius: 80px;
+}
+
+.span_user_name {
+    position: relative;
+    width: 100%;
+    height: 27px;
+    left: 127px;
+    top: 109px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.image_name_surname {
+    position: relative;
+    top: 147px;
+    left: 64px;
+}
+
+.span_name_surname {
+    position: relative;
+    width: 100%;
+    height: 22px;
+    left: 82px;
+    top: 149px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.image_gmail {
+    position: relative;
+    top: 165px;
+    left: 62px;
+}
+
+.span_gmail {
+    position: relative;
+    width: 100%;
+    height: 22px;
+    left: 78px;
+    top: 167px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.image_phonenumber {
+    position: relative;
+    top: 184px;
+    left: 62px;
+}
+
+.span_phonenumber {
+    position: relative;
+    width: 100%;
+    height: 22px;
+    left: 78px;
+    top: 186px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.button_edit_user {
+    position: relative;
+    width: 130px;
+    height: 50px;
+    left: 139px;
+    top: 213px;
+    background: #0B70F2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    border: 0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.span_subscribes {
+    position: relative;
+    width: 100%;
+    height: 24px;
+    left: 112px;
+    top: 249px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.span_number_video {
+    position: relative;
+    width: 100%;
+    height: 24px;
+    left: 156px;
+    top: 268px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.container_video_user {
+    position: relative;
+    width: 1282px;
+    height: 100%;
+}
+
+.container_photo_upload {
+    position: relative;
+    width: 1282px;
+    height: 208px;
+    left: 69px;
+    top: 49px;
+    align-items: center;
+    text-align: center;
+    background: rgba(234, 234, 234, 0.9);
+}
+
+.image_photo_upload {
+    position: relative;
+    top: 30px;
+}
+
+.span_photo_upload {
+    position: relative;
+    width: 95px;
+    height: 22px;
+    top: 28px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #808080;
+}
+
+.link_photo_upload {
+    position: relative;
+    width: 181px;
+    height: 22px;
+    top: 32px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #0B70F2;
+}
+
+.container_current_video {
+    position: relative;
+    width: 1282px;
+    height: 312px;
+    left: 69px;
+    top: 99px;
+    display: inline-block;
+    background: #FFFFFF;
+}
+
+.card {
+    position: relative;
+    width: 1282px;
+    height: 312px;
+    left: 0;
+    top: 0;
+    background: #FFFFFF;
+    border-radius: 25px;
+    border: 0;
+    display: grid;
+    grid-template-columns: 560px 690px;
+}
+
+.content_current_video {
+    position: relative;
+    width: 553px;
+    height: 312px;
+    left: 0px;
+    top: 0px;
+    border-radius: 25px;
+}
+
+.thevideo {
+    position: relative;
+    width: 553px;
+    height: 312px;
+    left: 0px;
+    top: 0px;
+    border-radius: 25px;
+}
+
+.current_video_name {
+    position: relative;
+    width: 679px;
+    height: 74px;
+    left: 22px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+}
+
+.current_video_description {
+    position: relative;
+    width: 679px;
+    height: 80px;
+    left: 22px;
+    top: 7px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: justify;
+    color: #000000;
+}
+
+.current_video_data_deteils {
+    position: relative;
+    width: 680px;
+    top: 121px;
+    left: 22px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.current_video_time {
+    position: relative;
+    width: 209px;
+    height: 20px;
+}
+
+.current_video_subscribes {
+    position: relative;
+    width: 123px;
+    height: 20px;
+    left: 392px;
+}
+
+.span_profile_myvideos {
+    position: relative;
+    width: 158px;
+    height: 37px;
+    left: 631px;
+    top: 144px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+}
+
+.container_uploaded_video {
+    position: relative;
+    width: 1340px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 408px 408px 408px;
+    grid-column-gap: 29px;
+    grid-template-rows: 384px;
+    top: 193px;
+    left: 69px;
+}
+
+.card_sm {
+    position: relative;
+    width: 408px;
+    height: 324px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    border-radius: 25px;
+}
+
+.card_sm:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.video_sm_deteils:hover {
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: ease 0.5s;
+}
+
+.content_video_sm {
+    position: relative;
+    width: 408px;
+    height: 230px;
+    left: 0px;
+    top: 0px;
+    border-radius: 25px;
+}
+
+.thevideo_sm {
+    position: relative;
+    width: 408px;
+    height: 230px;
+    left: 0px;
+    top: 0px;
+    border-radius: 25px;
+}
+
+.video_sm_name {
+    position: relative;
+    width: 368px;
+    height: 44px;
+    top: 14px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.video_sm_data_deteils {
+    position: relative;
+    width: 370px;
+    height: 18px;
+    top: 7px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #808080;
+}
+
+.link_video_sm_data {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #808080;
+}
+
+.video_sm_icon_see {
+    position: relative;
+    width: 100%;
+    text-align: end;
+    top: -13px;
+}
+
+.container_upload_video {
+    position: relative;
+    text-align: center;
+    width: 408px;
+    height: 230px;
+    left: 0;
+    top: 0;
+    background: #FFFFFF;
+    border: 1px solid #0B70F2;
+    box-sizing: border-box;
+    border-radius: 25px;
+    padding-top: 63px;
+}
+
+.span_adding_video {
+    position: relative;
+    width: 172px;
+    height: 24px;
+    left: 1px;
+    top: 29px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0B70F2;
+}

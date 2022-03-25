@@ -1,0 +1,168 @@
+#collapseOne {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.container_category_img {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.container_category {
+    position: relative;
+    width: 1720px;
+    height: 75px;
+    left: 100px;
+    top: 140px;
+}
+
+#movies {
+    position: absolute;
+    width: 320px;
+    height: 75px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+#music {
+    position: absolute;
+    width: 320px;
+    height: 75px;
+    left: 350px;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+#sport {
+    position: absolute;
+    width: 320px;
+    height: 75px;
+    left: 700px;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+#game {
+    position: absolute;
+    width: 320px;
+    height: 75px;
+    left: 1050px;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+#education {
+    position: absolute;
+    width: 320px;
+    height: 75px;
+    left: 1400px;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+#movies::after {
+    background-color: #0B70F2;
+    color: white;
+}
+
+#music:hover {
+    background-color: #0B70F2;
+    color: white;
+}
+
+#sport:hover {
+    background-color: #0B70F2;
+    color: white;
+}
+
+#game:hover {
+    background-color: #0B70F2;
+    color: white;
+}
+
+#education:hover {
+    background-color: #0B70F2;
+    color: white;
+}
+
+#movies_img:hover {
+    -webkit-filter: grayscale(100) brightness(200);
+    filter: grayscale(100) brightness(200);
+}
+
+#music_img:hover {
+    -webkit-filter: grayscale(100) brightness(200);
+    filter: grayscale(100) brightness(200);
+}
+
+#sport_img:hover {
+    -webkit-filter: grayscale(100) brightness(200);
+    filter: grayscale(100) brightness(200);
+}
+
+#game_img:hover {
+    -webkit-filter: grayscale(100) brightness(200);
+    filter: grayscale(100) brightness(200);
+}
+
+#education_img:hover {
+    -webkit-filter: grayscale(100) brightness(200);
+    filter: grayscale(100) brightness(200);
+}
+
+#demo1 {
+    position: relative;
+    width: 1920px;
+    height: 400px;
+    left: 0px;
+    top: 140px;
+    z-index: 2800;
+}
+
+#demo2 {
+    position: relative;
+    width: 1920px;
+    height: 400px;
+    left: 0px;
+    top: 140px;
+    z-index: 2800;
+}
+
+#demo3 {
+    position: relative;
+    width: 1920px;
+    height: 400px;
+    left: 0px;
+    top: 140px;
+    z-index: 2800;
+}
+
+#demo4 {
+    position: relative;
+    width: 1920px;
+    height: 400px;
+    left: 0px;
+    top: 140px;
+    z-index: 2800;
+}
+
+#demo5 {
+    position: relative;
+    width: 1920px;
+    height: 400px;
+    left: 0px;
+    top: 140px;
+    z-index: 2800;
+}

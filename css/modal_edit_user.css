@@ -1,0 +1,10 @@
+.modal_content_edit {
+    position: relative;
+    width: 408px;
+    height: 749px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 25px;
+    top: 90px;
+}
